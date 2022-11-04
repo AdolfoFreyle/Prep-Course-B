@@ -8,10 +8,12 @@ function imprimirSumaNumeros() {
     // Imprime la suma de los números del 1 al 10
     // Pista: usa un acumulador
     // Tu código:
-    var suma=0;
-    for(let i=0 ; i < 10 ; i++){
-      suma= suma + i
+    var suma = 0 ;
+    for(let i=0 ; i <= 10 ; i++){
+      suma = suma + i;
     }
+    return suma;
+    
 }
 
 function encuentraPares(array){
@@ -20,7 +22,7 @@ function encuentraPares(array){
   // Tu código:
 
   var pares= array.filter((i)=> i%2==0);
-  console.log(pares)
+  return pares
 }
 
 function elevaAlCuadrado(array){
@@ -29,9 +31,9 @@ function elevaAlCuadrado(array){
   // Tu código:
   var nuevoArray=[]
    for (let i =0; i < array.length; i++) {
-    console.log(nuevoArray[i]= array[i]* array[i]);
-    
+    nuevoArray[i]= array[i]* array[i]
   }
+  return nuevoArray;
   }
 
 
@@ -43,17 +45,21 @@ var suma=0;
  for (let i = 0; i< array.length; i++) {
   suma = suma + array[i]
   }
+  return suma;
 }
 
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
   var contador=0
-while(num >=1){
+/*while(num >=1){
    contador= contador +1
   num/=10
 }
-console.log (contador)
+return contador*/
+
+return  (num+'').length
+//return (num).toString().length
 }
   
   
